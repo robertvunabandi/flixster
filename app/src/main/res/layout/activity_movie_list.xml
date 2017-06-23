@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyDark"
+    tools:context="com.codepath.flixster.MovieListActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvMovies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/linearLayout">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDarkTransparent"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/prevPage"
+            style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onPreviousPage"
+            android:textColor="@color/colorSecondaryLight"
+            android:text="Prev" />
+
+        <TextView
+            android:id="@+id/pageNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="1"
+            android:textColor="@color/colorSecondaryLight"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/nextPage"
+            style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onNextPage"
+            android:textColor="@color/colorSecondaryLight"
+            android:text="Next" />
+
+    </LinearLayout>
+
+</RelativeLayout>

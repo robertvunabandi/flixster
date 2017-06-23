@@ -1,0 +1,39 @@
+themoviedb.com: ACC: gmail, SSU, robertvunabandi
+
+API KEY (v3 auth): df8d4dd91fdc16a6a4938e347e1b672f
+
+API READ ACCESS TOKEN (v4 auth): eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkZjhkNGRkOTFmZGMxNmE2YTQ5MzhlMzQ3ZTFiNjcyZiIsInN1YiI6IjU5NGMyN2FiYzNhMzY4MzJhZDAxN    jJjNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.vFRODlHk2HUYJ3RDHHSqdzmXuiNp3cYssxy31gIRBBk
+
+EXAMPLE: https://api.themoviedb.org/3/movie/550?api_key=df8d4dd91fdc16a6a4938e347e1b672fI
+/* * * JSON structure of results from: 
+    * * */
+
+GET https://api.themoviedb.org/3/movie/now_playing?api_key=df8d4dd91fdc16a6a4938e347e1b672f&language=en-US&page=@X
+# MAKE SURE TO SPECIFY CORRECT PAGE
+{
+    result: [{},...,{}],
+    page: INT (@X),
+    total_result: INT,
+    dates: {maximum: STRING ("YYYY-MM-DD"), minimum: STRING ("YYYY-MM-DD")},
+    total_pages: INT
+}
+
+/* * * HTTP URL for images:
+    * * */
+
+GET base_url/t/p/size/file_path
+    base_url: https://image.tmdb.org/
+    size:
+        backdrop_sizes: w300, w780, w1280, original
+        posters: w92, w154, w185, w342, w500, w780, original
+        logos: w45, w92, w154, w185, w300, w500, original
+        profiles: w45, w185, h632, original
+        still: w92, w185, w300, original
+
+/* * * JSON get configuration structures:
+    * * */
+    # LATER
+
+
+
+
