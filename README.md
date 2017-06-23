@@ -37,6 +37,8 @@ Here's a walkthrough of implemented user stories:
 
 ![FlixsterDemo](FlixsterDemo.gif)
 
+I apologize for the rotated screen. I didn't anticipate it when I started the GIF.
+
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
